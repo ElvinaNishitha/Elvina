@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLR street food</title>
+    <link rel="stylesheet" type="text/css" href="bsfstyle.css">
+</head>
+<body>
+<a href="bsf.html"><img src="blr.png"></a>
+<a href="about.html" style="
+    margin-left: 725px;
+    color: orange;
+"> About</a>
+<a href="#" style="
+    margin-left: 10px;
+    color: gray;
+"> Register</a>
+
+
+<style type="text/css">
+body { 
+            background-color: #292c33;
+            padding: 65px;
+        }
+</style>
+<div class="background">
+<img src="slider.png" width="1050" height="320" id="rotator">
+
+<script type="text/javascript">
+(function() {
+var rotator = document.getElementById('rotator');  
+var delayInSeconds = 50;
+var images = ['slider1.jpg','slider2.jpg', 'slider3.jpg', 'slider4.jpg'];
+
+var num = 0;
+var changeImage = function() {
+    var len = images.length;
+    rotator.src = images[num++];
+    if (num == len) {
+        num = 0;
+    }
+};
+setInterval(changeImage, delayInSeconds * 50);
+})();
+</script>
+
+<form>
+    First Name<input type="text" name="fname" style="
+    margin-left: 144px;
+    margin-bottom: 12px;
+    margin-top: 30px;"><br>
+    Last Name<input type="text" name="lname" style="
+    margin-left: 146px;
+    margin-bottom: 12px;"><br>
+    Password<input type="password" name="code" style="
+    margin-left: 155px;"><br>
+    Confirm Password<input type="password" name="code" style="
+    margin-left: 96px;
+    margin-top: 12px;"><br>
+    Email-id<input type="text" name="id" style="
+    margin-left: 160px;
+    margin-top: 12px;"><br>
+    Contact number<input type="text" name="cname" style="
+    margin-left: 113px;
+    margin-top: 12px;"><br>
+</form>
+    <button onclick="success()" style="
+    margin-left: 102px;
+    margin-top: 19px;">Submit</button>
+    <script type="text/javascript">
+        function success()
+        {
+            alert("Registration Successful. Thankyou!");
+            window.location = 'bsf.html';
+        }
+    </script>
+    </div>
+</body>
+</html>
