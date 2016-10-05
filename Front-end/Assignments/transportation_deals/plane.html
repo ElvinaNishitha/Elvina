@@ -67,20 +67,20 @@
 
 <br>
 	<h3>Make a payment</h3><br>
-	Name<input type="text" name="name" style="
+	Name<input type="text" id="nam" name="name" style="
     margin-left: 146px;
     margin-bottom: 12px;"><br>
-	Contact number :<input type="number" name="no" style="
+	Contact number :<input type="number" id="cn" name="no" style="
     margin-left: 82px;
     margin-bottom: 12px;"><br>
 	Age<input type="number" name="age" style="
     margin-left: 166px;
     margin-bottom: 12px;"><br>
-	Email-id<input type="text" name="id" style="
+	Email-id<input type="text" id="eid" name="id" style="
     margin-left: 137px;
     margin-bottom: 12px;"><br>
 	<h4>Card details:</h4><br>
-	Card Name<input type="text" name="cname" style="
+	Card Name<input type="text" id="cnam" name="cname" style="
     margin-left: 119px;
     margin-bottom: 12px;"><br>
 	Card number<input type="text" name="cname" style="
@@ -105,7 +105,7 @@
   });
   $('button').click(function()
   {
-    $('div').plane()
+    $('div').toggle()
   });
   </script>
 </body>
