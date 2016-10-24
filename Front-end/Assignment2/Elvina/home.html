@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Restau</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<!-- <div class="wrapper"> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<img src="logo.jpg" class="logo">
+				</div>
+				<div class="col-xs-6">
+					<h2 class="heading">R E S T A U R A N T</h2>
+				</div>
+				<div class="col-xs-1">
+					<a href="https://www.facebook.com/"><img src="facebook.png" class="img-responsive"></a>
+				</div>
+				<div class="col-xs-1">
+					<a href="https://twitter.com/"><img src="twitter.png" class="img-responsive"></a>
+				</div>
+				<div class="col-xs-1">
+					<a href="https://www.instagram.com/"><img src="instagram.png" class="img-responsive"></a>
+				</div>
+				<div class="col-xs-1">
+					<a href="https://www.youtube.com/"><img src="youtube.png" class="img-responsive"></a>
+				</div>
+			</div>
+		</div>
+<!-- 	<header>
+        <div class="wrapper">
+			<img src="logo.jpg" class="logo">
+       			<h2>R E S T A U R A N T</h2>
+        	    <nav>
+                    <ul>
+                    	<li><a href="https://www.facebook.com/"><img src="facebook.png" class="img-responsive"></a></li>
+						<li><a href="https://twitter.com/"><img src="twitter.png" class="img-responsive"></a></li>
+						<li><a href="https://www.instagram.com/"><img src="instagram.png" class="img-responsive"></a></li>
+						<li><a href="https://www.youtube.com/"><img src="youtube.png" class="img-responsive"></a>
+                      	</li>
+                    </ul>
+                </nav>
+        </div>
+    </header> -->
+
+	<div class="container">
+		  <ul class="nav nav-tabs">
+    		<li class="active"><a href="home.html">Home</a></li>
+    		<li><a href="about.html">About</a></li>
+    		<li class="dropdown">
+      		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+      			<ul class="dropdown-menu">
+        			<li><a href="#">Product -1</a></li>
+        			<li><a href="#">Product -2</a></li>
+        			<li><a href="#">Product -3</a></li>
+      			</ul>
+    		</li>
+    		<li><a href="#">Blog</a></li>
+    		<li><a href="#">Contact</a></li>
+  		</ul>
+	</div>
+		<!-- <div class="w3-content w3-display-container" style="max-width:800px"> -->
+  		<img class="mySlides" src="01.jpg">
+		<img class="mySlides" src="02.jpg">
+		<img class="mySlides" src="03.jpg">
+
+		<div class="w3-center">
+ 			<div class="w3-section">
+		    <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+			<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+  			<button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+  			<button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+			<button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
+			</div>
+		</div>
+
+		<script>
+				var myIndex = 0;
+				carousel();
+				function carousel() {
+				    var i;
+				    var x = document.getElementsByClassName("mySlides");
+				    for (i = 0; i < x.length; i++) {
+				       x[i].style.display = "none";
+					    }
+				    myIndex++;
+				    if (myIndex > x.length) {myIndex = 1}
+				    x[myIndex-1].style.display = "block";
+				    setTimeout(carousel, 15000); // Change image every 15 seconds
+					}
+		</script>
+		<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function currentDiv(n) {
+				  showDivs(slideIndex = n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("demo");
+				  if (n > x.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+				     x[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				     dots[i].className = dots[i].className.replace(" w3-white", "");
+				  }
+				  x[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " w3-white";
+				}
+		</script>
+
+	<p class="navbar-brand"><small>Eat and relax..</small></p>
+
+	<div id="navigation-bar" class="clearfix">    
+    <form id="search" action="#" method="post">
+        <div id="label"><label for="search-terms" id="search-label">search</label></div>
+        <div id="input"><input type="text" name="search-terms" id="search-terms" placeholder="Search"></div>
+    </form>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-4">
+            <form action="" class="search-form">
+                <div class="form-group has-feedback">
+            		<input type="text" class="form-control" name="search" id="search">
+              		<span class="glyphicon glyphicon-search form-control-feedback"></span>
+            	</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container"> -->
+		<div class="container">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4" style="color:#00887b">
+          <h2>Multi Cuisine</h2>
+          <p>Find all the delicious food</p>
+          <p><a class="btn btn-default" href="about.html" role="button">Info</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4" style="color:#00887b">
+          <h2>Affordable </h2>
+          <p>Great food with the best prices</p>
+          <p><a class="btn btn-default" href="about.html" role="button">Info</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4" style="color:#00887b">
+          <h2>Karaoke</h2>
+          <p>Enjoy yourself with live karaoke</p>
+          <p><a class="btn btn-default" href="about.html" role="button">Info</a></p>
+        </div>
+      </div>
+     </div>
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5" style="color:black">
+          <h2 class="featurette-heading" >Thankyou for stopping by! 
+          <span class="text-muted">We gaurantee happy customers</span></h2>
+          <p class="lead">We house great services, amazing food,a great ambience and gauranteed satisfaction. Come look into it yourself. Cheers!</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <a href="#"><img class="featurette-image img-responsive center-block" src="happy.jpg" height="200" width="200" alt="happy">
+        </div>
+      </div>
+     <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-9">
+          <h1>Have a great day!</h1>
+      </div>
+     </div>
+
+</script>
+<script>
+   var slideIndex = 1;
+   showDivs(slideIndex);
+   function plusDivs(n) {
+       showDivs(slideIndex += n);
+   }    function currentDiv(n) {
+       showDivs(slideIndex = n);
+   }    function showDivs(n) {
+       var i;
+       var x = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("demo");
+            debugger;
+       if (n > x.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = x.length}
+               for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";
+               }
+               for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace(" w3-red", "");
+               }
+               x[slideIndex-1].style.display = "block";
+               dots[slideIndex-1].className += " w3-red";
+           }            
+           var myIndex = 0;
+           carousel();            
+           function carousel() {
+               var i;
+               var x = document.getElementsByClassName("mySlides");
+               for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";
+               }
+               myIndex++;
+               if (myIndex > x.length) {myIndex = 1}
+                   x[myIndex-1].style.display = "block";
+               setTimeout(carousel, 5000);
+           }
+</script>
+<div class="container">
+	<img src="arrow-up.png" id="button" height="20" width="30">
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   
+		integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).scroll(function(){
+        	var scroll_pos = $(window).scrollTop()
+    			if(scroll_pos > 10){
+ 		       		$('#button').click(function(){
+        			$("body").scrollTop(0);
+        		});
+    		}
+    	});
+    </script>
+    <a style="float:right" href="about.html">More</a>
+    </div>
+<footer>
+	Copyright
+</footer>
+ <nav align="right">
+    <form >
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="https://www.billdesk.com">PAYMENT</a>
+        </form> 
+ </nav>
+</body>
+</html>
+
