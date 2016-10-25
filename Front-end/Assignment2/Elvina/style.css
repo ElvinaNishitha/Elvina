@@ -1,7 +1,7 @@
 body {
-	font-family: Georgia;
+  font-family: Georgia;
     margin: 0;
-	background-color: rgb(255, 251, 220);
+  background-color: rgb(255, 251, 220);
 }
 
 .wrapper{
@@ -15,27 +15,13 @@ header nav{
     float: right;
 }
 
-img.logo{
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    /*margin-top: 20px;*/
-    float: left;
-    position: relative;
-}
-/*.conatiner{
-    margin-top: 30px;
-}*/
-
 h2{
-    height: 0;
-    margin: 0;
-    font-family: Georgia, cursive;
-	color: #00887b;
-	font-size: 55px;
-	font-weight: 800px;
-	text-align: center;
-	position: relative;
+
+  font-family: Georgia, cursive;
+  color: #00887b;
+  font-size: 40px;
+  font-weight: 800px;
+  /*text-align: center;*/
 }
 
 header nav li{
@@ -44,41 +30,38 @@ header nav li{
     margin: 10px 10px;
 }
 
-.img-responsive{
-	border-radius: 50%;
-	padding: 0;
-	position: relative;
-	float: right;
+img{
+  border-color: #00887b;
 }
 
 .container{
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .container ul li a{
-	font-family: Georgia, cursive;
-	color: #00887b;
-	font-size: 25px;
-	font-weight: 600px;
-	margin-top: 20px;
-	padding-right: 100px;
-	position: relative;
-}	
+  font-family: Georgia, cursive;
+  color: #00887b;
+  font-size: 25px;
+  font-weight: 600px;
+  margin-top: 20px;
+  padding-right: 100px;
+  position: relative;
+} 
 }
 .nav_nav-tabs{
-	padding-left: 20%;
+  padding-left: 20%;
 }
 
 .mySlides {
-	display:none;
+  display:none;
 }
 .w3-left, .w3-right, .w3-badge {
-	cursor:pointer;
+  cursor:pointer;
 }
 .w3-badge {
-	height:13px;
-	width:13px;
-	padding:0;
+  height:13px;
+  width:13px;
+  padding:0;
 }
 .w3-center{
     padding-top: 20px;
@@ -102,22 +85,6 @@ header nav li{
 }
 
 .navbar-toggle {top:10px}
-
-@media (min-width:768px) {
-
-  .navbar-brand {
-    padding-top:20px;
-    padding-left: 50px;
-    text-align: center;
-  }
-
-.navbar-nav{
-    padding-top:30px;
-    padding-bottom:30px;
-    text-align: center;
-  }
-
-}
 
 #navigation-bar {
     position: relative;
@@ -147,10 +114,10 @@ header nav li{
     cursor: pointer;
 }
 #label label:hover {
-    background: url("../img/search.png") -60px 0
+    background: url("../img/search.png") -40px 0
 }
 #label.active label {
-    background: url("../img/search.png") -60px 0
+    background: url("../img/search.png") -40px 0
 }
 #input {
     position: absolute;
@@ -207,7 +174,7 @@ nav li {
     height: 60px;
     line-height: 60px;
     font-size: 24px;
-    font-family: "Oswald", sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -240,14 +207,6 @@ nav a:hover {
 .search-form .form-group input.form-control::-webkit-input-placeholder {
   display: none;
 }
-.search-form .form-group input.form-control:-moz-placeholder {
-  /* Firefox 18- */
-  display: none;
-}
-.search-form .form-group input.form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  display: none;
-}
 .search-form .form-group input.form-control:-ms-input-placeholder {
   display: none;
 }
@@ -271,7 +230,43 @@ nav a:hover {
   font-size: 14px;
 }
 
-h5{
-    color: #00887b;
-    padding: 20px;
+
+footer{
+  text-align: center;
+  background-color: #00887b;
+  color:  rgb(255, 251, 220);
+  width:100%;
+  position:absolute;
+  /*bottom:0;*/
+  left:0;
+}
+@media (min-width:768px) {
+
+  .navbar-brand {
+    padding-top:20px;
+    padding-left: 50px;
+    text-align: center;
+  }
+
+.navbar-nav{
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 630px) {
+
+.menubar {
+  display: none;
+  height: 20px;
+  width: 100%;
+  background: url(menu.png) height:50px width: 50px no-repeat 98% center;
+  background-color: #00887b;
+  cursor: pointer;
+}
+.container ul{
+  overflow: hidden;
+}
 }
